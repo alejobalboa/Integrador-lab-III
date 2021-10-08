@@ -1,0 +1,1 @@
+mostrar 4 preguntas por vez y luego de que las mismas se respondieron ocultar los divs en las que se encuentran y mostrar el div siguiente.
