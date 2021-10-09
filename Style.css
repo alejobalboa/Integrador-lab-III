@@ -7,24 +7,25 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#intro {
-    border: solid 2px lightcoral;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .cuestionario {
     border: solid 2px lightcoral;
     display: none;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.preguntas {
+    border: solid 2px rgb(27, 160, 160);
+    height: 300px;
+    width: 550px;
+}
 
-/*#anterior_2 {
+.boton_atras {
     float:left;
-}*/
+}
+
+#tanque {
+    height: 150px;
+    width: 150px;
+}

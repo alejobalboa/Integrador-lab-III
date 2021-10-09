@@ -9,22 +9,97 @@
         <h1 id="titulo_principal">¿Cuanto sabe sobre la Segunda Guerra Mundial?</h1>
     </div>
 
-    <div id="intro">
+    <div id="intro" class="cuestionario">
         <h2>Cuanto este listo para Iniciar, haga click en siguiente</h2>
         <p>Tenga en cuenta que este formulario cuenta de 3 partes en las que deberá responder la mayor cantidad de preguntas de forma correcta</p>
-        <button id="siguiente_1" >Siguiente</button>
+        <button id="empezar_cue">Siguiente</button>
     </div>
 
     <div id="primera_parte" class="cuestionario">
         <h2>Primera parte</h2>
-        <button id="anterior_2" >Al Inicio</button>
-        <button id="siguiente_2" >Siguiente</button>
+        <form id="preg_1" class="preguntas">
+            <h3>1 - ¿En que año finalizó la segunda guerra mundial?</h3>
+            <input type="radio" name="1" value="i"/>
+            <label>1942</label>
+            </br>
+            <input type="radio" name="1" value="i"/>
+            <label>1944</label>
+            </br>
+            <input type="radio" name="1" value="c"/>
+            <label>1945</label>
+            </br>
+            <input type="radio" name="1" value="i"/>
+            <label>1952</label>
+        </form>
+
+        <form id="preg_2" class="preguntas">
+            <h3>2 - ¿Cual es el tanque que se aprecia en la imagen?</h3>
+            <img src="img/pregunta-2.jpg" alt="tanque" id="tanque"/>
+            </br>
+            <input type="radio" name="2" value="i"/>
+            <label>Panzer IV</label>
+            </br>
+            <input type="radio" name="2" value="i"/>
+            <label>T-35</label>
+            </br>
+            <input type="radio" name="2" value="c"/>
+            <label>T-34</label>
+            </br>
+        </form>
+
+        <form id="preg_2" class="preguntas">
+            <h3>3 - ¿Donde se realizo la batalla de tanques más grande de la SGM 2?</h3>
+            <input type="text" placeholder="ingrese su respuesta"/>            
+        </form>
+        
+        <button id="anterior_2" class="boton_atras">Al Inicio</button>
+        <button id="siguiente_2">Siguiente</button>
     </div>
 
     <div id="segunda_parte" class="cuestionario">
         <h2>Segunda parte</h2>
-        <button id="anterior_3" >Anterior</button>
-        <button id="siguiente_3" >Siguiente</button>
+        <form id="preg_1" class="preguntas">
+            <h3>1 - ¿En que año finalizó la segunda guerra mundial?</h3>
+            <input type="radio" name="1" value="i"/>
+            <label>1942</label>
+            </br>
+            <input type="radio" name="1" value="i"/>
+            <label>1944</label>
+            </br>
+            <input type="radio" name="1" value="c"/>
+            <label>1945</label>
+            </br>
+            <input type="radio" name="1" value="i"/>
+            <label>1952</label>
+        </form>
+
+        <form id="preg_2" class="preguntas">
+            <h3>2 - ¿Cual es el tanque que se aprecia en la imagen?</h3>
+            <img src="img/pregunta-2.jpg" alt="tanque" id="tanque"/>
+            </br>
+            <input type="radio" name="2" value="i"/>
+            <label>Panzer IV</label>
+            </br>
+            <input type="radio" name="2" value="i"/>
+            <label>T-35</label>
+            </br>
+            <input type="radio" name="2" value="c"/>
+            <label>T-34</label>
+            </br>
+        </form>
+
+        <form id="preg_2" class="preguntas">
+            <h3>3 - ¿Donde se realizo la batalla de tanques más grande de la SGM 2?</h3>
+            <input type="text" placeholder="ingrese su respuesta"/>            
+        </form>
+        <button id="anterior_3" class="boton_atras">Anterior</button>
+        <button id="siguiente_3">Siguiente</button>
+    </div>
+
+    <div id="tercera_parte" class="cuestionario">
+        <h2>Tercera parte</h2>
+        <button id="anterior_4" class="boton_atras">Anterior</button>
+        <button id="finalizar">Finalizar</button>
     </div>
 
     <script src="js/logica-botones.js"></script>

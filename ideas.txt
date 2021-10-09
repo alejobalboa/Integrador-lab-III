@@ -1,1 +1,2 @@
 mostrar 4 preguntas por vez y luego de que las mismas se respondieron ocultar los divs en las que se encuentran y mostrar el div siguiente.
+-Al finalizar el cuestionario mostrar todos los divs ocultos mostrando que pregunta es correcta y cual es incorrecta
