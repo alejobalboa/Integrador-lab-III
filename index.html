@@ -27,16 +27,16 @@
             <h2 id="primer_titulo">Primera parte</h2>
             <form id="preg_1" class="preguntas">
                 <h3>1 - ¿En que año finalizó la segunda guerra mundial?</h3>
-                <input type="radio" name="1" value="i"/>
+                <input type="radio" id="preg1-a" name="preg1" value="i"/>
                 <label>1942</label>
                 </br>
-                <input type="radio" name="1" value="i"/>
+                <input type="radio" id="preg1-b" name="preg1" value="i"/>
                 <label>1944</label>
                 </br>
-                <input type="radio" name="1" value="c"/>
+                <input type="radio" id="preg1-c" name="preg1" value="c"/>
                 <label>1945</label>
                 </br>
-                <input type="radio" name="1" value="i"/>
+                <input type="radio" id="preg1-d" name="preg1" value="i"/>
                 <label>1952</label>
             </form>
     
@@ -44,20 +44,20 @@
                 <h3>2 - ¿Cual es el tanque que se aprecia en la imagen?</h3>
                 <img src="img/pregunta-2.jpg" alt="tanque" id="tanque"/>
                 </br>
-                <input type="radio" name="2" value="i"/>
+                <input type="radio" name="preg2" value="i"/>
                 <label>Panzer IV</label>
                 </br>
-                <input type="radio" name="2" value="i"/>
+                <input type="radio" name="preg2" value="i"/>
                 <label>T-35</label>
                 </br>
-                <input type="radio" name="2" value="c"/>
+                <input type="radio" name="preg2" value="c"/>
                 <label>T-34</label>
                 </br>
             </form>
     
             <form id="preg_3" class="preguntas">
                 <h3>3 - ¿Donde se realizo la batalla de tanques más grande de la SGM 2?</h3>
-                <input type="text" placeholder="ingrese su respuesta"/>            
+                <input type="text" id="preg3" placeholder="ingrese su respuesta"/>            
             </form>
             
             </br>
@@ -71,35 +71,35 @@
             <h2 id="segundo_titulo">Segunda parte</h2>
             <form id="preg_4" class="preguntas">
                 <h3>4 - ¿Donde se produjo la batalla más grande de Africa del Norte?</h3>
-                <input type="radio" name="3" value="c"/>
+                <input type="radio" name="preg4" value="c"/>
                 <label>El Alamein</label>
                 </br>
-                <input type="radio" name="3" value="i"/>
+                <input type="radio" name="preg4" value="i"/>
                 <label>Alexandria</label>
                 </br>
-                <input type="radio" name="3" value="i"/>
+                <input type="radio" name="preg4" value="i"/>
                 <label>Tunes</label>
                 </br>
-                <input type="radio" name="3" value="i"/>
+                <input type="radio" name="preg4" value="i"/>
                 <label>Sirte</label>
             </form>
     
             <form id="preg_5" class="preguntas">
                 <h3>5 - (Debe ser todo correcto para que se considere el punto) ¿Cuales de los siguientes tanques fueron utilizados por la Union Sovietica durante la guerra?</h3>
-                <label><input type="checkbox" id="cbox1" value="primer_checkbox">T-44</label>
+                <label><input type="checkbox" id="cbox1" name="preg5" value="primer_checkbox">T-44</label>
                 </br>
-                <label><input type="checkbox" id="cbox2" value="segundo_checkbox">T-60</label>
+                <label><input type="checkbox" id="cbox2" name="preg5" value="segundo_checkbox">T-60</label>
                 </br>
-                <label><input type="checkbox" id="cbox3" value="tercer_checkbox">KV-1</label>
+                <label><input type="checkbox" id="cbox3" name="preg5" value="tercer_checkbox">KV-1</label>
                 </br>
-                <label><input type="checkbox" id="cbox4" value="cuarto_checkbox">T-54</label>
+                <label><input type="checkbox" id="cbox4" name="preg5" value="cuarto_checkbox">T-54</label>
                 </br>
-                <label><input type="checkbox" id="cbox5" value="quinto_checkbox">IS-2</label>
+                <label><input type="checkbox" id="cbox5" name="preg5" value="quinto_checkbox">IS-2</label>
             </form>
     
             <form id="preg_6" class="preguntas">
                 <h3>6 - En que año se produjo la batalla por Stalingrado (introduzca la respuesta en números)</h3>
-                <input type="text" placeholder="ingrese su respuesta"/>            
+                <input type="text" id="preg6" placeholder="ingrese su respuesta"/>            
             </form>
             </br>
             <div class="botones">
@@ -112,16 +112,16 @@
             <h2 id="tercer_titulo">Tercera parte</h2>
             <form id="preg_7" class="preguntas">
                 <h3>7 - ¿En que año entro EEUU en la guerra?</h3>
-                <input type="radio" name="4" value="i"/>
+                <input type="radio" name="preg7" value="i"/>
                 <label>1940</label>
                 </br>
-                <input type="radio" name="4" value="i"/>
+                <input type="radio" name="preg7" value="i"/>
                 <label>1939</label>
                 </br>
-                <input type="radio" name="4" value="i"/>
+                <input type="radio" name="preg7" value="i"/>
                 <label>1944</label>
                 </br>
-                <input type="radio" name="4" value="c"/>
+                <input type="radio" name="preg7" value="c"/>
                 <label>1941</label>
             </form>
             </br>
@@ -131,9 +131,8 @@
             </div>
         </div>
     </div>
-    
-    <script src="js/logica-formulario.js"></script>
-    <script src="js/logica-botones.js"></script>
+
+   <script type="text/javascript" src="js/logica-botones.js"></script>    
 </body>
 
 </html>
