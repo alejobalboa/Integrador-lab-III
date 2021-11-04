@@ -1,56 +1,76 @@
-#box_titulo {
-    width: 100%;
-    border: solid 1px lightblue;
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
-}
-
-#titulo_principal {
-    text-align: center;
-    /*font-family: 'Andada Pro', serif;*/
-    /*font-family: Arial, Helvetica, sans-serif;*/
-}
-
 body {
+    background: rgb(145,145,145);
+    background: linear-gradient(90deg, rgba(145,145,145,1) 0%, rgb(0, 68, 4) 100%);  
     font-family: 'Andada Pro', serif;
 }
 
+#box_titulo {
+    width: 100%;
+    height: 200px;
+    border: solid 1px lightblue;
+    background-image: url('img/banner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#titulo_principal {
+    color: rgb(194, 194, 194);
+    text-align: center;
+    padding-top: 1.3rem;
+    font-size: 3.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 #cuestionario {
+    margin-top: 1.3rem;
     margin: auto;
     width: 100%;
     border: solid 1px lightcoral;
-    /*display: none;*/
     text-align: center;
-    /*justify-content: center;
-    align-items: center;
-    flex-direction: column;*/
 }
 
 .preguntas {
     margin: auto;
-    /*border: solid 2px rgb(27, 160, 160);*/
-    /*height: 300px;
-    width: 550px;*/
-}
-
-.botones {
-    margin:auto;
 }
 
 button {
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(189,70,252,1) 100%);
-   /* background-color: #4CAF50;*/
+    margin-bottom: 1.3rem;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    background: rgb(215, 216, 218);
     border: none;
-    color: white;
+    color: black;
     font-size: 16px;
+    box-shadow: 2px 2px 10px #302e2e;
 }
 
 button:hover {
-    box-shadow: 2px 2px 10px #a8a8a8;
+    box-shadow: 0px 0px 0px #302e2e;
+    background: rgb(56, 145, 69);
+    color: white;
+}
+
+.boton_adelante {
+    margin-left: 0.5rem;
+}
+
+.boton_atras {
+    margin-right: 0.5rem;
 }
 
 #tanque {
-    height: 150px;
-    width: 150px;
+    height: 8rem;
+}
+
+#preg3 {
+    width: 15rem;
+}
+
+#preg6 {
+    width: 15rem;
+}
+
+#resultado {
+ /*DAR UN FORMATO AL RESULTADO FINAL*/
+
 }

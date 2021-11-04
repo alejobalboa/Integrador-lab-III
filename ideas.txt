@@ -1,2 +1,5 @@
-mostrar 4 preguntas por vez y luego de que las mismas se respondieron ocultar los divs en las que se encuentran y mostrar el div siguiente.
--Al finalizar el cuestionario mostrar todos los divs ocultos mostrando que pregunta es correcta y cual es incorrecta
+-DAR FORMATO AL DIV CON LA CANTIDAD DE RESPUESTAS RESPONDIDAS CORRECTAMENTE.
+-FINALIZAR LA FUNCION contar_correctas EN logica-botones.js
+-FINALIZAR LA FUNCION DEL BOTON TERMINAR TEST
+-HAY QUE INDICAR EN CADA PREGUNTA QUE ESTA MAL O QUE ESTÁ BIEN, SE PUEDE HACER CON OTRA FUNCION REVISANDO LAS PROPIEDADES DE CADA UNA DE LOS 
+ELEMENNTOS DEL FORM.

@@ -44,7 +44,7 @@ document.getElementById("anterior_4").onclick = function (){
     document.getElementById("tercera_parte").style.display = "none";
 }
 
-
+/*FUNCIONES*/
 function validar_checkbox(identificador){
     var i;
 
@@ -53,7 +53,6 @@ function validar_checkbox(identificador){
     if(valor != null){
         return 1;
     }
-
     return 0;
 }
 
@@ -68,7 +67,21 @@ function validar_respuestas() {
     return true;
 }
 
+function contar_correctas(){
+
+    var correctas;
+
+    /*LA FUNCION ESTA SOLO DEBE DEVOLVER CUANTAS PREGUNTAS CORRECTAS CONTESTO EL USUARIO, BUSCAR UNA PROPIEDAD EN LOS TEXTBOX PARA NO QUEMAR LA RESPUESTA ACÁ EN EL JS OP QUEMARLA
+    Y A LA BIJA*/ 
+    return correctas;
+
+
+}
+
+
+
 document.getElementById("finalizar").onclick = function (){
+    /*VALIDACION FORMULARIO*/
     if (validar_respuestas()){
         document.getElementById("primer_titulo").style.display = "none";
         document.getElementById("anterior_2").style.display = "none";
@@ -82,34 +95,16 @@ document.getElementById("finalizar").onclick = function (){
         document.getElementById("finalizar").style.display = "none";
         document.getElementById("tercera_parte").style.display = "block";
         document.getElementById("tercer_titulo").style.display = "none";
-    }else{
+        document.getElementById("resultado").style.display = "block";
+
+        /*ACA ABAJO DEBERIA INDICARLE AL USUARIO CUANTAS RESPUESTAS CONTESTO CORRECTAMENTE*/
+        var c = contar_correctas()
+        document.getElementById("resultado").innerHTML = "usted contesto " + c + " de 7 preguntas correctamente"; /*TENGO QUE DARLE UN FORMATO AL HTML Y PONERLO EN UNN BOX DE SER POSIBLE*/
+        }else{
         alert("es necesario responder todas las preguntas")
     }
 }    
 
 
-/*FUNCIONES*/
-/*
-function val_resp1(){
-    var i;
-    var preg1 = document.getElementById("preg_1");
 
-    console.log("paso");
 
-    for (i=0; preg1.p1.length; i++){
-        console.log("paso");
-        if (preg1.p1.checked)
-            return 1;
-    }
-
-    return 0;
-}
-
-function validar_respuestas() {
-    
-    if (val_resp1 = 0){
-        alert("ERROR");
-    }
-
-    return true;
-}*/
