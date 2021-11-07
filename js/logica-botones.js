@@ -199,8 +199,5 @@ document.getElementById("finalizar").onclick = function (){
     }
 }    
 
-/*CREAR FUNCION PARA DESHABILITAR EL FORMULARIO */
-
-
 
 
