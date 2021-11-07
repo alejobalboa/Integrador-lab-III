@@ -1,10 +1,10 @@
-  <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es-419">
 <head>
+    <meta charset="UTF-8">
     <title>Cuestionario Sobre la segunda guerra mundial</title>
-    <link href="Style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="fuentes.css" rel="stylesheet" type="text/css" /> 
 </head>
 <body>
     <div id="box_titulo">
@@ -16,124 +16,169 @@
             <h2>Cuanto este listo para Iniciar, haga click en siguiente</h2>
             <p>Tenga en cuenta que este formulario cuenta de 3 partes en las que deberá responder la mayor cantidad de preguntas de forma correcta</p>
             <div class="botones">
-                <button id="empezar_cue">Siguiente</button>
+                <button id="empezar_cue">SIGUIENTE</button>
             </div>
         </div>
     
-        <div id="resultado">
-            
+        <div id="resultado">  
         </div>
     
         <div id="primera_parte">
+            
             <h2 id="primer_titulo">Primera parte</h2>
             <form id="preg_1" class="preguntas">
-                <h3>1 - ¿En que año finalizó la segunda guerra mundial?</h3>
-                <input type="radio" id="preg1-a" name="preg1" value="i"/>
-                <label>1942</label>
-                </br>
-                <input type="radio" id="preg1-b" name="preg1" value="i"/>
-                <label>1944</label>
-                </br>
-                <input type="radio" id="preg1-c" name="preg1" value="c"/>
-                <label>1945</label>
-                </br>
-                <input type="radio" id="preg1-d" name="preg1" value="i"/>
-                <label>1952</label>
+                <h3  id="titulo_pregunta_1">1 - ¿En que año finalizó la segunda guerra mundial?</h3>
+                <div class="flex-row">
+                    <input type="radio" class="radio-button" id="preg1-a" name="preg1" value="i"/>
+                    <label class="incorrecta">1942</label>
+                </div>
+
+                <div class="flex-row">
+                    <input type="radio" class="radio-button" id="preg1-b" name="preg1" value="i"/>
+                    <label class="incorrecta">1944</label>
+                </div>
+
+                <div class="flex-row">
+                    <input type="radio" class="radio-button" id="preg1-c" name="preg1" value="c"/>
+                    <label class="correcta">1945</label>
+                </div>
+                
+                <div class="flex-row">
+                    <input type="radio" class="radio-button" id="preg1-d" name="preg1" value="i"/>
+                    <label class="incorrecta">1952</label>
+                </div>
             </form>
     
             <form id="preg_2" class="preguntas">
-                <h3>2 - ¿Cual es el tanque que se aprecia en la imagen?</h3>
+                <h3 id="titulo_pregunta_2">2 - ¿Cual es el tanque que se aprecia en la imagen?</h3>
                 <img src="img/preg-2.png" alt="tanque" id="tanque"/>
-                </br>
-                <input type="radio" name="preg2" value="i"/>
-                <label>Panzer IV</label>
-                </br>
-                <input type="radio" name="preg2" value="i"/>
-                <label>T-35</label>
-                </br>
-                <input type="radio" name="preg2" value="c"/>
-                <label>T-34</label>
-                </br>
+                
+                <div class="flex-row">
+                    <input type="radio" name="preg2" value="i"/>
+                    <label class="incorrecta">Panzer IV F</label>
+                </div>
+
+                <div class="flex-row">
+                    <input type="radio" name="preg2" value="i"/>
+                    <label class="incorrecta">T-35</label>
+                </div>
+
+                <div class="flex-row">
+                    <input type="radio" name="preg2" value="c"/>
+                    <label class="correcta" >T-34-85</label>
+                </div>
             </form>
     
             <form id="preg_3" class="preguntas">
-                <h3>3 - ¿Donde se realizo la batalla de tanques más grande de la SGM 2?</h3>
-                <input type="text" id="preg3"  placeholder="ingrese su respuesta"/>            
+                <h3 id="titulo_pregunta_3">3 - ¿Donde se realizo la batalla de tanques más grande de la SGM 2?</h3>
+
+                <input type="text" id="preg3"  placeholder="ingrese su respuesta"/>    
+                       
+                <p class="resp_textbox">Respuesta correcta: Kursk</p>
             </form>
             
-            </br>
             <div class="botones">
-                <button id="anterior_2" class="boton_atras">Al Inicio</button>
-                <button id="siguiente_2" class="boton_adelante">Siguiente</button>
+                <button id="anterior_2" class="boton_atras">INICIO</button>
+                <button id="siguiente_2" class="boton_adelante">SIGUIENTE</button>
             </div>
         </div>
     
         <div id="segunda_parte">
             <h2 id="segundo_titulo">Segunda parte</h2>
             <form id="preg_4" class="preguntas">
-                <h3>4 - ¿Donde se produjo la batalla más grande de Africa del Norte?</h3>
-                <input type="radio" name="preg4" value="c"/>
-                <label>El Alamein</label>
-                </br>
-                <input type="radio" name="preg4" value="i"/>
-                <label>Alexandria</label>
-                </br>
-                <input type="radio" name="preg4" value="i"/>
-                <label>Tunes</label>
-                </br>
-                <input type="radio" name="preg4" value="i"/>
-                <label>Sirte</label>
+                <h3 id="titulo_pregunta_4">4 - ¿Donde se produjo la batalla más grande de Africa del Norte?</h3>
+
+                <div class="flex-row">
+                    <input type="radio" name="preg4" value="c"/>
+                    <label class="correcta">El Alamein</label>
+                </div>
+
+                <div class="flex-row">
+                    <input type="radio" name="preg4" value="i"/>
+                    <label class="incorrecta" >Alexandria</label>
+                </div>
+                
+                <div class="flex-row">
+                    <input type="radio" name="preg4" value="i"/>
+                    <label class="incorrecta">Tunes</label>
+                </div>
+              
+                <div class="flex-row">
+                    <input type="radio" name="preg4" value="i"/>
+                    <label class="incorrecta">Sirte</label>
+                </div>
             </form>
     
             <form id="preg_5" class="preguntas">
-                <h3>5 - (Debe ser todo correcto para que se considere el punto) ¿Cuales de los siguientes tanques fueron utilizados por la Union Sovietica durante la guerra?</h3>
-                <label><input type="checkbox" id="cbox1" name="preg5" value="primer_checkbox">T-44</label>
-                </br>
-                <label><input type="checkbox" id="cbox2" name="preg5" value="segundo_checkbox">T-60</label>
-                </br>
-                <label><input type="checkbox" id="cbox3" name="preg5" value="tercer_checkbox">KV-1</label>
-                </br>
-                <label><input type="checkbox" id="cbox4" name="preg5" value="cuarto_checkbox">T-54</label>
-                </br>
-                <label><input type="checkbox" id="cbox5" name="preg5" value="quinto_checkbox">IS-2</label>
+                <h3 id="titulo_pregunta_5">5 - (Debe ser todo correcto para que se considere el punto) ¿Cuales de los siguientes tanques fueron utilizados en combate por la Union Sovietica durante la guerra?</h3>
+
+                <div class="flex-row">
+                    <label class="incorrecta"><input type="checkbox" id="cbox1" name="preg5" value="i">T-44</label>
+                </div>
+              
+                <div class="flex-row">
+                    <label class="correcta"><input type="checkbox" id="cbox2" name="preg5" value="c">T-60</label>
+                </div>
+            
+                <div class="flex-row">
+                    <label class="correcta"><input type="checkbox" id="cbox3" name="preg5" value="c">KV-1</label>
+                </div>
+            
+                <div class="flex-row">
+                    <label class="incorrecta"><input type="checkbox" id="cbox4" name="preg5" value="i">T-54</label>
+                </div>
+            
+                <div class="flex-row">
+                    <label class="correcta"><input type="checkbox" id="cbox5" name="preg5" value="c">IS-2</label>
+                </div>
             </form>
     
             <form id="preg_6" class="preguntas">
-                <h3>6 - En que año se produjo la batalla por Stalingrado (introduzca la respuesta en números)</h3>
+                <h3 id="titulo_pregunta_6">6 - En que año se produjo la batalla por Stalingrado (introduzca la respuesta en números)</h3>
+                
                 <input type="text" id="preg6" placeholder="ingrese su respuesta"/>            
+                  
+                <p class="resp_textbox">Respuesta correcta: 1942</p>
             </form>
-            </br>
             <div class="botones">
-                <button id="anterior_3" class="boton_atras">Anterior</button>
-                <button id="siguiente_3" class="boton_adelante">Siguiente</button>
+                <button id="anterior_3" class="boton_atras">ANTERIOR</button>
+                <button id="siguiente_3" class="boton_adelante">SIGUIENTE</button>
             </div>
         </div>
     
         <div id="tercera_parte">
             <h2 id="tercer_titulo">Tercera parte</h2>
             <form id="preg_7" class="preguntas">
-                <h3>7 - ¿En que año entro EEUU en la guerra?</h3>
-                <input type="radio" name="preg7" value="i"/>
-                <label>1940</label>
-                </br>
-                <input type="radio" name="preg7" value="i"/>
-                <label>1939</label>
-                </br>
-                <input type="radio" name="preg7" value="i"/>
-                <label>1944</label>
-                </br>
-                <input type="radio" name="preg7" value="c"/>
-                <label>1941</label>
-            </form>
-            </br>
-            <div class="botones"></div>
-                <button id="anterior_4" class="boton_atras">Anterior</button>
-                <button id="finalizar" class="boton_adelante">Finalizar</button>
-            </div>
-        </div>
-    </div>
+                <h3 id="titulo_pregunta_7">7 - ¿En que año entro EEUU en la guerra?</h3>
 
-   <script type="text/javascript" src="js/logica-botones.js"></script>    
+                <div class="flex-row">
+                    <input type="radio" name="preg7" value="i"/>
+                    <label class="incorrecta">1940</label>
+                </div>
+             
+                <div class="flex-row">
+                    <input type="radio" name="preg7" value="i"/>
+                    <label class="incorrecta">1939</label>
+                </div>
+                
+                <div class="flex-row">
+                    <input type="radio" name="preg7" value="i"/>
+                    <label class="incorrecta">1944</label>
+                </div>
+             
+                <div class="flex-row">
+                    <input type="radio" name="preg7" value="c"/>
+                    <label class="correcta">1941</label>
+                </div>
+            </form>
+            
+            <div class="botones">
+                <button id="anterior_4" class="boton_atras">ANTERIOR</button>
+                <button id="finalizar" class="boton_adelante">FINALIZAR</button>
+            </div>
+        </div> 
+    </div>
+    <script src="js/logica-botones.js"></script>   
 </body>
 
 </html>
